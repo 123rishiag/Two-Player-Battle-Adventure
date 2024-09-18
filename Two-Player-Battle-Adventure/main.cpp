@@ -1,7 +1,8 @@
 #include "header/Main/GameManager.h"
 using namespace Main;
 
-int main() {
+int main() 
+{
     
     // Starting GameManager
     GameManager gameManager;
