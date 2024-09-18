@@ -128,6 +128,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="source\Main\GameManager.cpp" />
+    <ClCompile Include="source\Player\Controllers\AgilePlayerController.cpp" />
+    <ClCompile Include="source\Player\Controllers\BerserkerPlayerController.cpp" />
+    <ClCompile Include="source\Player\Controllers\GuardianPlayerController.cpp" />
+    <ClCompile Include="source\Player\PlayerController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header\Main\GameManager.h" />
+    <ClInclude Include="header\Player\Controllers\AgilePlayerController.h" />
+    <ClInclude Include="header\Player\Controllers\BerserkerPlayerController.h" />
+    <ClInclude Include="header\Player\Controllers\GuardianPlayerController.h" />
+    <ClInclude Include="header\Player\PlayerController.h" />
+    <ClInclude Include="header\Player\PlayerType.h" />
+    <ClInclude Include="header\Utility\Random.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
