@@ -1,6 +1,6 @@
 # Two-Player Battle Adventure
 
-Welcome to **Two-Player Battle Adventure**, an exciting text based multiplayer game developed in C++ that showcases object-oriented design principles. This project is designed to demonstrate dynamic memory management, polymorphism, and efficient resource handling, while offering an engaging battle experience with different player types.
+Welcome to **Two-Player Battle Adventure**, an exciting text-based multiplayer game developed in C++ that showcases object-oriented design principles. This project is designed to demonstrate dynamic memory management, polymorphism, and efficient resource handling, while offering an engaging battle experience with different player types.
 
 ## Features
 
@@ -29,13 +29,13 @@ The game features three distinct player types:
 
 ### Headers:
 - **Game Management**:
-  - `GameManager.h`: Manages game flow and core logic.
+  - `GameManager`: Manages game flow and core logic.
 - **Player**:
-  - `PlayerType.h`: Defines different player types (Guardian, Agile, Berserker).
-  - `PlayerController.h`: Manages player actions and inputs.
+  - `PlayerType`: Defines different player types (Guardian, Agile, Berserker).
+  - `PlayerController`: Manages player actions and inputs.
     - **Sub Controllers**: `GuardianPlayerController`, `AgilePlayerController`, `BerserkerPlayerController`
 - **Utility**:
-  - `Random.h`: Provides random number generation for various game mechanics.
+  - `Random`: Provides random number generation for various game mechanics.
   
 ### Source Files:
 - **Main**: 
@@ -59,7 +59,7 @@ The goal is to either bring the opponent’s health to zero or be the last playe
 ## Setup Instructions
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/123rishiag/Two-Player-Battle-Adventure.git
    ```
 
