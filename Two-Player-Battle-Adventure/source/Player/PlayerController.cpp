@@ -7,9 +7,10 @@ namespace Player
     using namespace std;
     using namespace Utility;
 
-    PlayerController::PlayerController(int _health, int _baseDamage, int _healMin, int _healMax, int _additionalDamageMin, int _additionalDamageMax)
+    PlayerController::PlayerController(int _health, int _baseDamage, int _healMin, int _healMax, int _additionalDamageMin, 
+        int _additionalDamageMax, PlayerType _playerType)
         : health(_health), baseDamage(_baseDamage), healMin(_healMin), healMax(_healMax), 
-        additionalDamageMin(_additionalDamageMin), additionalDamageMax(_additionalDamageMax) 
+        additionalDamageMin(_additionalDamageMin), additionalDamageMax(_additionalDamageMax), playerType(_playerType)
     {
         Random::Init(); // Seed the random number generator
         healthMax = health;
@@ -85,4 +86,6 @@ namespace Player
         }
         return isAlive;
     }
+
+    PlayerType PlayerController::GetPlayerType() { return playerType; }
 }

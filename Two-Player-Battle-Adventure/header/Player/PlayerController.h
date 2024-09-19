@@ -19,10 +19,12 @@ namespace Player
         int additionalDamageMin;
         int additionalDamageMax;
 
+        PlayerType playerType;
+
     public:
         // Constructor
         PlayerController(int _health, int _baseDamage, int _healMin, int _healMax,
-            int _additionalDamageMin, int _additionalDamageMax);
+            int _additionalDamageMin, int _additionalDamageMax, PlayerType _playerType);
 
         // Virtual Destructor due to dyanamic memory allocation
         virtual ~PlayerController();
@@ -47,9 +49,9 @@ namespace Player
 
         // Other Methods
         bool IsAlive() const;
+        PlayerType GetPlayerType();
+
         // Pure Virtual Methods for Special Attacks
         virtual void SpecialAbility(PlayerController* targetPlayer, PlayerSelectActionType selectedAction) = 0;
-        // Other Pure Virtual Methods
-        virtual PlayerType GetPlayerType() = 0;
     };
 }

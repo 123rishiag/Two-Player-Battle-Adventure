@@ -10,7 +10,8 @@ namespace Player
 
         GuardianPlayerController::GuardianPlayerController(int _health, int _baseDamage, int _healMin, int _healMax,
             int _additionalDamageMin, int _additionalDamageMax)
-            : PlayerController(_health, _baseDamage, _healMin, _healMax, _additionalDamageMin, _additionalDamageMax) { }
+            : PlayerController(_health, _baseDamage, _healMin, _healMax, _additionalDamageMin, _additionalDamageMax,
+                PlayerType::Guardian) { }
 
         void GuardianPlayerController::SpecialAbility(PlayerController* targetPlayer, PlayerSelectActionType selectedAction)
         {
@@ -18,7 +19,5 @@ namespace Player
             HealPlayer(2 * GetHeal());
             targetPlayer->TakeDamage(GetBaseDamage(), GetAdditionalDamage());
         }
-
-        PlayerType GuardianPlayerController::GetPlayerType() { return PlayerType::Guardian; }
     }
 }

@@ -10,7 +10,8 @@ namespace Player
 
         BerserkerPlayerController::BerserkerPlayerController(int _health, int _baseDamage, int _healMin, int _healMax,
             int _additionalDamageMin, int _additionalDamageMax)
-            : PlayerController(_health, _baseDamage, _healMin, _healMax, _additionalDamageMin, _additionalDamageMax) { }
+            : PlayerController(_health, _baseDamage, _healMin, _healMax, _additionalDamageMin, _additionalDamageMax,
+                PlayerType::Berserker) { }
 
         void BerserkerPlayerController::SpecialAbility(PlayerController* targetPlayer, PlayerSelectActionType selectedAction)
         {
@@ -25,7 +26,5 @@ namespace Player
                 NormalAbility(targetPlayer, selectedAction);
             }
         }
-
-        PlayerType BerserkerPlayerController::GetPlayerType() { return PlayerType::Berserker; }
     }
 }
