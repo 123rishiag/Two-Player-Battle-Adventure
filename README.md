@@ -68,4 +68,4 @@ The goal is to either bring the opponent’s health to zero or be the last playe
 3. Run the executable in your terminal to start the game.
 
 ## Video Demo
-Check out the [Video Demo](#) to see the gameplay in action!
+Check out the [Video Demo](https://www.loom.com/share/9e1c7283b0504001b8591ec43d778015?sid=25d31a48-9dd6-42f9-8888-09caefbbbd00) to see the gameplay in action!
