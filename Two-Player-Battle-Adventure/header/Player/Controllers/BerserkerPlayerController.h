@@ -13,7 +13,6 @@ namespace Player
                 int _additionalDamageMin, int _additionalDamageMax);
 
             void SpecialAbility(PlayerController* targetPlayer, PlayerSelectActionType selectedAction) override;
-            PlayerType GetPlayerType() override;
         };
     }
 }
