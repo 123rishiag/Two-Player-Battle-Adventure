@@ -1,6 +1,6 @@
-# Two-Player Battle Adventure
+# Two Player Battle Adventure
 
-Welcome to **Two-Player Battle Adventure**, an exciting text-based multiplayer game developed in C++ that showcases object-oriented design principles. This project is designed to demonstrate dynamic memory management, polymorphism, and efficient resource handling, while offering an engaging battle experience with different player types.
+Welcome to **Two Player Battle Adventure**, an exciting text-based multiplayer game developed in C++ that showcases object-oriented design principles. This project is designed to demonstrate dynamic memory management, polymorphism, and efficient resource handling, while offering an engaging battle experience with different player types.
 
 ## Features
 
