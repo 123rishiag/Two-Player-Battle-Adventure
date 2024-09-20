@@ -27,19 +27,18 @@ The game features three distinct player types:
 
 ## Project Structure
 
-### Headers:
-- **Game Management**:
+### Main Components:
+- **Main**:
   - `GameManager`: Manages game flow and core logic.
 - **Player**:
   - `PlayerType`: Defines different player types (Guardian, Agile, Berserker).
   - `PlayerController`: Manages player actions and inputs.
     - **Sub Controllers**: `GuardianPlayerController`, `AgilePlayerController`, `BerserkerPlayerController`
+  
+### Additional Core Components:
 - **Utility**:
   - `Random`: Provides random number generation for various game mechanics.
-  
-### Source Files:
-- **Main**: 
-  - `main.cpp`: Entry point of the game.
+- **Main**: Entry point of the game.
 
 ## How to Play
 
